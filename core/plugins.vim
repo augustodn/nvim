@@ -36,6 +36,9 @@ Plug 'Vimjas/vim-python-pep8-indent', {'for': 'python'}
 Plug 'jeetsukumaran/vim-pythonsense'
 Plug 'machakann/vim-swap'
 
+" Python syntax checker
+Plug 'andviro/flake8-vim' 
+
 " IDE for Lisp
 if executable('sbcl')
   " Plug 'kovisoft/slimv'
@@ -174,6 +177,9 @@ endif
 "{{ Linting, formating
 " Syntax check and make
 " Plug 'neomake/neomake'
+
+" WhiteSpaces Checker
+Plug 'ntpeters/vim-better-whitespace'
 
 " Another linting plugin
 Plug 'dense-analysis/ale'
