@@ -76,7 +76,8 @@ endfunction
 let s:candidate_theme = ['gruvbox8', 'deus', 'solarized8', 'onedark', 'neodark',
       \ 'edge', 'sonokai', 'gruvbox_material']
 let s:idx = utils#RandInt(0, len(s:candidate_theme)-1)
-let s:theme = s:candidate_theme[s:idx]
+" let s:theme = s:candidate_theme[s:idx]
+let s:theme = 'onedark'
 
 let s:colorscheme_func = printf('s:my_theme_dict.%s()', s:theme)
 if has_key(s:my_theme_dict, s:theme)
