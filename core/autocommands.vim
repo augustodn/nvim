@@ -27,6 +27,12 @@ augroup resume_edit_position
         \ if line("'\"") > 1 && line("'\"") <= line("$") && &ft !~# 'commit' | execute "normal! g`\"zvzz" | endif
 augroup END
 
+" Check PEP8 syntax when writing a file
+augroup check_syntax
+  autocmd!
+  autocmd BufWritePost *.py call flake8#Flake8()
+augroup END
+
 " Display a message when the current file is not in utf-8 format.
 " Note that we need to use `unsilent` command here because of this issue:
 " https://github.com/vim/vim/issues/4379
