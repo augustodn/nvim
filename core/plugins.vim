@@ -37,7 +37,8 @@ Plug 'jeetsukumaran/vim-pythonsense'
 Plug 'machakann/vim-swap'
 
 " Python syntax checker
-Plug 'andviro/flake8-vim' 
+" Plug 'andviro/flake8-vim'
+Plug 'nvie/vim-flake8'
 
 " IDE for Lisp
 if executable('sbcl')
